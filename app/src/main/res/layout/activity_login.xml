@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textViewID"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/alex_brush"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#7F4ED6"
+        android:textSize="50sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewID"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/emailLayoutID"
+        >
+
+        <EditText
+            android:id="@+id/LemailSID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/passwordLayoutID"
+        android:layout_below="@id/emailLayoutID"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+        >
+
+        <EditText
+            android:id="@+id/LpasswordSID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/loginID"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:textColor="#DFD367"
+        android:backgroundTint="#417BAA"
+        android:layout_below="@id/passwordLayoutID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/lText"
+        android:text="Need an account?"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="#C89A55"
+        android:layout_below="@id/loginID"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/lText"
+        android:text="Create an new account"
+        android:textAllCaps="false"
+        android:layout_below="@id/loginID"
+        android:layout_marginTop="15dp"
+        android:textColor="#A32802"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
